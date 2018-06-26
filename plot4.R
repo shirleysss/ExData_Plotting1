@@ -11,7 +11,7 @@ datause <- subset(data, Date == "2007-02-01" | Date == "2007-02-02")
 ## convert the Date and Time variables to Date/Time classes
 datause$datetime <- strptime(paste(datause$Date, datause$Time), "%Y-%m-%d %H:%M:%S")
 
-## plot 3
+## plot 4
 png("plot4.png", width=480, height=480)
 par(mfrow = c(2, 2))
 
